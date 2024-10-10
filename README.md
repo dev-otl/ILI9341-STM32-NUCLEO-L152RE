@@ -3,7 +3,7 @@ Minimal library/driver for TFT LCD Display Shield with an ILI9341 controller. De
 
 ## Device list
 [STM32 Nucleo-64 development board with STM32L152RE MCU](https://www.st.com/en/evaluation-tools/nucleo-l152re.html)   
-[2.4 Inch TFT LCD Touch Display Shield](https://www.az-delivery.de/en/products/2-4-tft-lcd-touch-display)
+[2.4 Inch TFT LCD Touch Display Shield](https://www.az-delivery.de/en/products/2-4-tft-lcd-touch-display)  
 [ILI9341 Datasheet](https://cdn-shop.adafruit.com/datasheets/ILI9341.pdf)
 ## Files
 ### `ILI9341.h`:
