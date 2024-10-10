@@ -9,10 +9,10 @@ Minimal library/driver for TFT LCD Display Shield with an ILI9341 controller. De
 ### `ILI9341.h`:
 Header file with pin configuration and function declarations.
 Needs to be included.
-```
+```C
 #ifndef ILI9341_H
-#define ILI9341_H
-#include "ILI9341.h"
+    #define ILI9341_H
+    #include "ILI9341.h"
 #endif
 ```
 
@@ -21,10 +21,8 @@ Source file with implementation of header functions.
 
 ### `AsciiLib.* and HzLib.*`:
 Helper files that provide character pixel data (not mine).  
+Each character is represented by [16 rows] x [8 columns] bit matrix stored as an array of 16 2-byte values. Bit 1 turns pixel to the color.     
 Modify the pixel data as desired.
-
-#### Character Pixel Format
-Each character is represented by [16 rows] x [8 columns] bit matrix stored as an array of 16 2-byte values. Bit 1 turns pixel on.
 
 ### Functions
 |                                                        |                                                                         |
@@ -40,7 +38,7 @@ Each character is represented by [16 rows] x [8 columns] bit matrix stored as an
 
 ### Tips
 + After the LCD initialization it is recommended to follow Memory Write flowchart (ILI9341 datasheet page 114)
-+ The two functions `LCD_Send_Command` and `LCD_Send_Data`  should be enough to implement your own opimized display functions
++ The two functions `LCD_Send_Command` and `LCD_Send_Data`  should be enough to implement your own opimized display write functions.
 + Use macros `LCD_<ILI9341_control_pin>(bit)` to set individual ILI9341 control pins to specified bit. Pins are `CSX, RESX, DCX, WRX, RDX`. 
 + To set the data pins use macro `LCD_D(x)` which sets all D<7:0> pins to the bits of x<7:0>. 
 + If you modify pin connection, modify the `LCD_<LCD_pin>` declaration in header file and the appropriate pin numbers in Set_Write_Mode*() functions in the source file.
