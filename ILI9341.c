@@ -465,10 +465,7 @@ void init_test()
 
 	LCD_WR_REG(0x29); // display on
 
-	// LCD_Clear_All_16(BLUE);
-	// GUI_Text(10, 10, (uint8_t*) "EOSs @ PoliTO 2022-23", WHITE, BLUE);
-	// GUI_Text(10, 30, (uint8_t*) "Powered by Micrium-C OS", WHITE, BLUE);
-	// GUI_Text(10, 30, (uint8_t*) "Ready", WHITE, BLUE);
+	
 }
 void LCD_Init(void)
 {
