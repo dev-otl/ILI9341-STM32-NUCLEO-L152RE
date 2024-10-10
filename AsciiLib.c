@@ -1,11 +1,3 @@
-/*
- * AsciiLib.c
- *
- *  Created on: 8 dic 2022
- *      Author: onthe
- */
-
-
 #ifndef ASCIILIB_H
 #define ASCIILIB_H
 #include "AsciiLib.h"

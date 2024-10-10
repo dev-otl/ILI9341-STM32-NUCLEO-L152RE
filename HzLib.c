@@ -1,11 +1,3 @@
-/*
- * HzLib.c
- *
- *  Created on: 8 dic 2022
- *      Author: onthe
- */
-
-
 #ifndef HZLIB_H
 	#define HZLIB_H
 	#include "Hzlib.h"

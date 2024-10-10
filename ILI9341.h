@@ -1,10 +1,3 @@
-/*
- * ILI9341.h
- *
- *  Created on: 8 dic 2022
- *      Author: onthe
- */
-
 #ifndef SOURCE_ST_STM32L152RE_NUCLEO_BLINKY_CUSTOMLIBRARY_ILI9341_H_
 #define SOURCE_ST_STM32L152RE_NUCLEO_BLINKY_CUSTOMLIBRARY_ILI9341_H_
 
@@ -186,5 +179,11 @@ void PutChar(uint16_t Xpos, uint16_t Ypos, uint8_t ASCI, uint16_t charColor,
 		uint16_t bkColor);
 void GUI_Text(uint16_t Xpos, uint16_t Ypos, uint8_t *str, uint16_t Color,
 		uint16_t bkColor);
+
+void LCD_Pin_Set(LCD_PIN *pin);
+void LCD_Pin_Reset(LCD_PIN *pin);
+void LCD_Send_Command(uint8_t command);
+void LCD_Send_Data(uint8_t data);
+void LCD_Pin_Write_Data(uint8_t hex);
 
 #endif /* SOURCE_ST_STM32L152RE_NUCLEO_BLINKY_CUSTOMLIBRARY_ILI9341_H_ */

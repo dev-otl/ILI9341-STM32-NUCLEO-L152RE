@@ -1,10 +1,3 @@
-/*
- * ILI9341.c
- *
- *  Created on: 8 dic 2022
- *      Author: onthe
- */
-
 #ifndef ILI9341_H
 #define ILI9341_H
 #include "ILI9341.h"
